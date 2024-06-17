@@ -1,0 +1,311 @@
+/* reminder for myself: 1rem = 16px */
+/* brand color palette */
+:root {
+    --text-color:#FFFDD0;
+    --highlight: #00005a;
+    --nav-color: #2E5A88;
+    --section-header-color: #d2b48c;
+    --background-color: #2E5A88;
+    --project-text-color: #2E5A88;
+}
+
+* {
+    font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--background-color);
+}
+
+/* header and nav */
+
+header {
+    top: 0;
+    width: 100%;
+    font-size: 3rem;
+    padding: 10px;
+    position: absolute;
+    background-color: var(--nav-color);
+}
+
+.highlight {
+    color: #00005a;
+}
+
+.nav {
+    margin: 0;
+    width: 75%;
+    margin: auto;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-menu {
+    list-style-type: none;
+    font-variant: all-small-caps;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70px;
+}
+.nav-menu li a  {
+    transition: color 0.3s;
+}
+
+.nav-menu :hover {
+    color: var(--highlight);
+}
+
+/* main */
+main {
+    background-color: var(--background-color);
+}
+
+/* headers */
+.top-section-header {
+    margin-top: 100px;
+    width:100%;
+}
+
+.second-section-header, .section-header{
+    width:100%;
+}
+
+.top-section-header,.second-section-header, .section-header {
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: var(--section-header-color);
+    padding: 10px;
+    font-variant: all-small-caps;
+    color: var(--text-color);
+}
+/* section */
+section {
+    background-color: var(--background-color);
+    width:100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* About Section */
+.first-section,.second-section {
+    background-color: #2E5A88;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    max-width: 100%;
+}
+
+.first-section h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.first-section p {
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 2rem;
+    text-align: center;
+    width: 75%;
+}
+
+.profile-pic {
+    width: 300px;
+    border: solid 5px var(--text-color);
+    border-radius: 150px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Technical Specs */
+
+.specs {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.spec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spec img {
+    height: 50px;
+}
+
+.second-section p {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Projects */
+
+
+.project {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 2em;
+    margin-left: 1.5rem;
+    margin-bottom: 2em;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "content content";
+    gap: 1em;
+}
+
+.project-header {
+    grid-area: header;
+    text-align: center;
+}
+
+.project h3 {
+    margin-top: 0;
+    background-color: var(--nav-color); 
+    color: var(--text-color); 
+    padding: 0.5em; 
+    border-radius: 4px; 
+    display: inline-block; 
+    font-size: 3rem;
+}
+
+.project-content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+
+.project img {
+    width: 300px; 
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.project p {
+    color: var(--project-text-color);
+    margin: 0.5em 0;
+    flex: 1;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.buttons {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+    justify-content: center;
+}
+
+.buttons .buttn {
+    background-color: #ffd4b3;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1em 2em; 
+    border-radius: 8px; 
+    border: 1px solid #ffd4b3;
+    font-size: 1.1em; 
+    text-align: center; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buttons .buttn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Contact Info Section */
+
+.contact-list {
+    list-style-type: none;
+    font-variant: all-small-caps;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    background-color: var(--nav-color);
+}
+
+.contact-list a:hover {
+    color: var(--highlight);
+}
+
+
+/* 980px or smaller */
+
+@media screen and (max-width: 980px) {
+.nav {
+    display: inline;
+    text-align: center;
+}
+
+.nav-menu { 
+    gap: 20px;
+}
+
+.top-section-header {
+    margin-top: 85px;
+}
+
+.contact-list {
+    font-size: 1.75rem;
+}   
+}
+
+
+
+/* 768px or smaller */
+
+@media screen and (max-width: 768px) {
+.contact-list {
+    display: inline-block;
+    text-align: center;
+}
+}    
+
+/* 400px or smaller */
+
+@media screen and (max-width: 400px) {
+.profile-img {
+    width: 200px;
+    border: solid 2px var(--text-color);
+    border-radius: 100px;
+}
+
+.contact-list {
+    font-size: 1.25rem;
+}
+
+.top-section-header {
+    margin-top: 130px;
+            }
+}
