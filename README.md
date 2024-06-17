@@ -12,20 +12,24 @@
 
 This is my first portfolio created as for Challenge 2 Bootcamp Coding using HTML and CSS.
 
-![portfolio screenshot](/leon-module-02-challenge/assets/image/portfolio1.PNG)
-![portfolio screenshot](/leon-module-02-challenge/assets/image/portfolio2.PNG)
+![portfolio screenshot](assets/image/portfolio1.PNG)
+![portfolio screenshot](assets/image/portfolio2.PNG)
 
 ## Final Product
 
 In full Screen (More than 980px)
 
-![fullscreen](/leon-module-02-challenge/assets/image/portfolio1.PNG)
-![fullscreen](/leon-module-02-challenge/assets/image/portfolio2.PNG)
+![fullscreen](assets/image/portfolio1.PNG)
+![fullscreen](assets/image/portfolio2.PNG)
+
+<div align="center">
 
 Below 980px:
-![980pxscreen](/leon-module-02-challenge/assets/image/below980px-1.PNG)
-![980pxscreen](/leon-module-02-challenge/assets/image/below980px-2.PNG)
-![980pxscreen](/leon-module-02-challenge/assets/image/below980px-3.PNG)
+![980pxscreen](assets/image/below980px-1.PNG)
+![980pxscreen](assets/image/below980px-2.PNG)
+![980pxscreen](assets/image/below980px-3.PNG)
+
+</div>
 
 ## Table of Contents
 * [Usage](#usage)
